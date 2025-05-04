@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The GrunHaüs</title>
+    <!-- GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend+Giga:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap -->
+    <link href="css/GHbootstrap-4.4.1.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/grunhaus.js"></script>
+  </head>
+  <body>
+    <!------------------------- NAV ----------------------------->
+    <nav class="navbar navbar-expand-lg">
+      <a href="index.html" alt="return to home page"><img
+          src="images/grunhaus-logo-H-grn.svg"
+          alt="GH Logo"
+          width="240"
+          class="img-thumbnail img-fluid nav-logo"
+      /></a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <div class="cta"><div class="toggle-btn type1"></div></div>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              shop</a
+            >
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="shop.html" alt="shop plants">Plants</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="shop.html" alt="shop supplies">Supplies</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="shop.html" alt="shop GH merch">GH Merch</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="plant-care.html" alt="go to plant care page">Plant Care</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="events.html" alt="go to events page">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html" alt="go the about page">About The Haus</a>
+          </li>
+        </ul>
+        <button type="button" class="btn btn-dark">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            fill="currentColor"
+            class="bi bi-cart2"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"
+            />
+          </svg>
+          Go To Cart
+        </button>
+      </div>
+    </nav>
+    <!----------------- END NAV ------------------>
+
+    <!----------------- hero ------------------>
+    <div class="container-fluid home-hero-bkgd py-5">
+      <div class="row px-1">
+        <div class="col"></div>
+
+        <div class="col">
+          <div class="container-fluid home-hero mt-5 p-4">
+            <p class="lead-2">Willkommen im das</p>
+            <h1 class="display-1">GrünHaus</h1>
+            <h2 class="h4 mb-5">Form. Function. Folliage.</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------------- hero end ------------------>
+    <div class="gh-divider"><div class="gh-divider-box"></div></div>
+    <!----------------- SHOP section ------------------>
+    <div class="container-fluid shop-section">
+      <div class="row text-left mx-1 my-5">
+        <h2 class="display-5">Shop Popular Categories</h2>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="container text-center">
+              <a href="shop.html" alt="shop easy care" class="card-link">
+                <img
+                  src="images/GrunHaus-Cell_Img-easy.jpg"
+                  class="img-fluid image-link"
+                  alt="Easy care ZZ Plant"
+                /><br /><br />
+                <h3 class="card-title">Easy Care</h3></a
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="container text-center">
+              <a href="shop.html" alt="shop succulents" class="card-link">
+                <img
+                  src="images/GrunHaus-Cell_Img-cacti.jpg"
+                  class="img-fluid image-link"
+                  alt="cacti and succulent plants"
+                /><br /><br />
+                <h3 class="card-title">Cacti &amp; Succulents</h3></a
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="container text-center">
+              <a href="shop.html" alt="shop pet-friendly" class="card-link">
+                <img
+                  src="images/GrunHaus-Cell_Img-pets.jpg"
+                  class="img-fluid image-link"
+                  alt="cat between window and plant"
+                /><br /><br />
+                <h3 class="card-title">Pet-friendly</h3></a
+              >
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="container text-center">
+              <a href="shop.html" alt="shop topical" class="card-link">
+                <img
+                  src="images/GrunHaus-Cell_Img-tropical.jpg"
+                  class="img-fluid image-link"
+                  alt="tropical swiss cheese plant"
+                /><br /><br />
+                <h3 class="card-title">Tropical</h3></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!----------------- Button ------------------>
+      <div class="row d-flex flex-row-reverse mx-1 my-5">
+        <a href="shop.html" alt="shop all"><button type="button" class="btn btn-primary btn-lg">Shop ALl</button></a> 
+      </div>
+    </div>
+    <!----------------- END shop ------------------>
+    <div class="gh-divider"><div class="gh-divider-box"></div></div>
+    <!----------------- PLANT CARE ------------------>
+    <div class="container-fluid bg-blue">
+      <div class="row">
+        <div class="col col-md-6 col-12">
+          <div>
+            <img
+              src="images/home-care.jpg"
+              class="img-fluid img-border"
+              alt="Plant care"
+            />
+          </div>
+        </div>
+
+        <div class="col col-md-6 col-12 align-self-center">
+          <div class="has-animation animation-rtl" data-delay="1000">
+            <div class="plant-care-info">
+              <h3 class="display-7">Plant Care</h3>
+              <p class="lead my-4">
+                Visit our reference page for a refresher on the care and keeping
+                of your favorites.
+              </p>
+              <a href="plant-care.html" alt="plant care page button"><button" class="btn btn-outline-light">
+                Review
+              </button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------------- END plant care ------------------>
+    <div class="gh-divider3"></div>
+
+    <!----------------- Shop MORE ------------------>
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col d-flex align-items-stretch col-md-4 col-12">
+          <div class="row row-cols-2 mx-auto">
+            <div class="col empty-border1"></div>
+            <div class="col d-flex align-items-stretch">
+              <div class="plant-care-head-img border-b">
+              <img
+                src="images/GrunHaus-tools.jpg"
+                class="img-fluid"
+                alt="Gardening tools"/>
+            </div></div>
+            <div class="col d-flex align-items-stretch">
+              <div class="plant-care-head-img border-r">
+              <img
+                src="images/GrunHaus-containers2.jpg"
+                class="img-thumbnail"
+                alt="Gardening pots"/>
+            </div></div>
+            <div class="col bg-green"></div>
+          </div>
+        </div>
+
+        <div class="col col-md-4 col-12 shop-more">
+          <div class="row row-cols-1 mx-auto py-1">
+            <div class="col">
+              <div
+                class="container d-flex flex-column align-items-center py-5 my-5"
+              >
+                <h5 class="display-5 my-5 text-center">Beyond Plants</h5>
+                <button type="button" class="btn btn-primary disabled">
+                  Shop for More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col d-flex align-items-stretch col-md-4 col-12">
+          <div class="row row-cols-2 mx-auto">
+            <div class="col d-flex align-items-stretch">
+              <div class="plant-care-head-img border-r">
+              <img
+                src="images/GrunHaus-soil.jpg"
+                class="img-thumbnail"
+                alt="Gardening soil"/>
+            </div></div>
+            <div class="col bg-green"></div>
+            <div class="col empty-border2"></div>
+            <div class="col d-flex align-items-stretch">
+              <div class="plant-care-head-img border-t">
+              <img
+                src="images/GrunHaus-merch.jpg"
+                class="img-thumbnail"
+                alt="GrunHaus merchandise"/>
+            </div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------------- End MORE ------------------>
+    <div class="gh-divider3"></div>
+    <!----------------- EVENTS------------------>
+    <div class="container-fluid bg-red">
+      <div class="row">
+        <div class="col col-md-6 col-12 align-self-center">
+                    <div class="has-animation animation-ltr" data-delay="50">
+            <div class="plant-care-info situ-border-yb text-right">
+              <h3 class="display-7">Events</h3>
+              <p class="lead my-4">
+                All are invited to our Haus Parties.<br>
+                We're also happy to host private gatherings.
+              </p>
+              <a href="events.html" alt="events page button"><button" class="btn btn-outline-light">
+                Join Us
+              </button></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col col-md-6 col-12">
+          <div>
+            <img
+              src="images/home-events.jpg"
+              class="img-fluid img-border"
+              alt="GrunHaus Events"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------------- END events ------------------>
+    <div class="gh-divider"><div class="gh-divider-box"></div></div>        
+    <!----------------- ABOUT ------------------>
+    <div class="container home-about-container">
+      <div class="row">
+        <div class="col col-md-6 col-12 align-self-center">
+            <div class="home-about-info">
+              <h3 class="display-6">About the Haus</h3>
+              <p class="my-5">
+                Curious about our roots? Discover the story behind our space and
+                what guides our approach to living design.
+              </p>
+              <a href="about.html" alt="about page button"><button type="button" class="btn btn-primary">Learn More</button></a>
+            </div>
+        </div>
+
+        <div class="no-gutters col col-md-6 col-12">
+          <div>
+            <img
+              src="images/gh-exterior.jpg"
+              class="img-fluid home-about-img"
+              alt="GrunHaus store exterior"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------------- END about ------------------>
+    <div class="gh-divider"></div>
+    <!--------- DELIVERY------>
+    <div class="container-fluid gh-delivery">
+      <div class="row p-5">
+        <div class="col-xl-3 align-self-center">
+          <h4 class="display-5">Grün Delivers</h4>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-6 col-12 align-self-end">
+          <div class="card-body">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="80"
+              height="80"
+              fill="currentColor"
+              class="bi bi-truck"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2"
+              />
+            </svg>
+            <h5 class="card-title">Free Shipping</h5>
+            <p class="card-text">on orders $50 and up</p>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-6 col-12 align-self-end">
+          <div class="card-body">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="70"
+              height="70"
+              fill="currentColor"
+              class="bi bi-recycle"
+              viewBox="0 0 16 16"
+              style="padding-bottom: 5px"
+            >
+              <path
+                d="M9.302 1.256a1.5 1.5 0 0 0-2.604 0l-1.704 2.98a.5.5 0 0 0 .869.497l1.703-2.981a.5.5 0 0 1 .868 0l2.54 4.444-1.256-.337a.5.5 0 1 0-.26.966l2.415.647a.5.5 0 0 0 .613-.353l.647-2.415a.5.5 0 1 0-.966-.259l-.333 1.242zM2.973 7.773l-1.255.337a.5.5 0 1 1-.26-.966l2.416-.647a.5.5 0 0 1 .612.353l.647 2.415a.5.5 0 0 1-.966.259l-.333-1.242-2.545 4.454a.5.5 0 0 0 .434.748H5a.5.5 0 0 1 0 1H1.723A1.5 1.5 0 0 1 .421 12.24zm10.89 1.463a.5.5 0 1 0-.868.496l1.716 3.004a.5.5 0 0 1-.434.748h-5.57l.647-.646a.5.5 0 1 0-.708-.707l-1.5 1.5a.5.5 0 0 0 0 .707l1.5 1.5a.5.5 0 1 0 .708-.707l-.647-.647h5.57a1.5 1.5 0 0 0 1.302-2.244z"
+              />
+            </svg>
+            <h5 class="card-title">Eco-Options</h5>
+            <p class="card-text">help us keep the planet grün</p>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-6 col-12 align-self-end">
+          <div class="card-body">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="70"
+              height="70"
+              fill="currentColor"
+              class="bi bi-star"
+              viewBox="0 0 16 16"
+              style="padding-bottom: 5px"
+            >
+              <path
+                d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"
+              />
+            </svg>
+            <h5 class="card-title">Warrenty Support</h5>
+            <p class="card-text">worry-free simplicity</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------- END DELIVERY------>
+    <div class="gh-divider"></div>
+    <!------------------------------------------------ FOOTER ---------------------------------------------------------------->
+    <div class="container-fluid">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5">
+        <div class="col col-md-6 sub-colum p-2">
+          <a
+            href="index.html"
+            alt="return to home page"
+            class="d-flex align-items-end mb-3 text-decoration-none h4"
+            aria-label="Footer Logo"
+          >
+            <img
+              src="images/grunhaus-icon-black.svg"
+              alt="GrunHaus Icon"
+              width="35"
+              class="img-thumbnail img-fluid"
+            />The GrünHaus
+          </a>
+          <form>
+            <h5 style="color: var(--primary)">Subscribe for GH Updates</h5>
+            <div class="d-flex flex-column flex-sm-row">
+              <input
+                id="newsletter1"
+                type="email"
+                class="form-control"
+                placeholder="Email address"
+              />
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+          <br />
+        </div>
+
+        <div class="col col-md-3 p-2">
+          <h5 style="color: var(--primary)">Quick Links</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="index.html" alt="home page" class="nav-link p-0 text-body-secondary"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="shop.html" alt="shop page" class="nav-link p-0 text-body-secondary"
+                >Shop</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="plant-care.html" alt="plant care page" class="nav-link p-0 text-body-secondary"
+                >Plant Care</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="events.html" alt="events page" class="nav-link p-0 text-body-secondary">Events</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="about.html" alt="about page" class="nav-link p-0 text-body-secondary">About</a>
+            </li>
+          </ul>
+          <br />
+        </div>
+
+        <div class="col col-md-3 p-2">
+          <h5 style="color: var(--primary)">Legalese</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a class="nav-link disabled"
+                >Privacy Policy</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a class="nav-link disabled">Terms of Service</a>
+            </li>
+            <br />
+            <p class="text-body-secondary">
+              © 2025 The GrünHaus | All rights reserved.
+            </p>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <!------------------------------------------------ END FOOTER ---------------------------------------------------------------->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>

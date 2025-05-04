@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Plant Care | The GrunHaüs</title>
+    <!-- GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend+Giga:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap -->
+    <link href="css/GHbootstrap-4.4.1.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/grunhaus.js"></script>
+  </head>
+  <body>
+    <!------------------------- NAV ----------------------------->
+    <nav class="navbar navbar-expand-lg">
+      <a href="index.html" alt="return to home page"><img
+          src="images/grunhaus-logo-H-grn.svg"
+          alt="GH Logo"
+          width="240"
+          class="img-thumbnail img-fluid nav-logo"
+      /></a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <div class="cta"><div class="toggle-btn type1"></div></div>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              shop</a
+            >
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="shop.html" alt="shop plants">Plants</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="shop.html" alt="shop supplies">Supplies</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="shop.html" alt="shop GH merch">GH Merch</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="plant-care.html" alt="go to plant care page">Plant Care</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="events.html" alt="go to events page">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html" alt="go the about page">About The Haus</a>
+          </li>
+        </ul>
+        <button type="button" class="btn btn-dark">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            fill="currentColor"
+            class="bi bi-cart2"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"
+            />
+          </svg>
+          Go To Cart
+        </button>
+      </div>
+    </nav>
+    <!----------------- END NAV ------------------>
+
+    <div class="jumbotron-fluid">
+      <div class="row row-column">
+        <div class="plant-care-head-img col-xl-6 col-md-6 col-12">
+          <img
+            src="images/GrunHaus-Care-page.jpg"
+            class="img-fluid"
+            alt="plant-care"
+          />
+        </div>
+
+        <div class="plant-care-title col-xl-6 col-md-6 col-12">
+          <div class="container-fluid p-5 p-md-3">
+            <h1 class="display-right">Plant Care</h1>
+            <p class="display-7 display-right">
+              quick reference for essential needs
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----------------------Divider-------------------------->
+    <div class="gh-divider"><div class="gh-divider-box"></div></div>
+    <div class="black-divider2"></div>
+    <!-----------------------CARE SECTION-------------------------->
+    <div class="container-fluid bg-blue">
+      <div class="container bg-white situ-border-x">
+        <div id="accordion">
+          <!-- Accordion #1 -->
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <button
+                class="btn btn-link care-btn accordion-header"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+                aria-label="Toggle Accordion Item 1"
+              >
+                <span class="h3">Calathea</span>
+                <span class="accordion-caret">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-caret-down-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </div>
+            <!-- Accordion Block Start -->
+            <div
+              id="collapseOne"
+              class="collapse show"
+              aria-labelledby="headingOne"
+              data-parent="#accordion"
+            >
+              <div class="card-body accordion-content">
+                <div class="d-flex accordion-inner-row">
+                  <div class="accordion-inner-col col-md-6 my-3 mb-md-0">
+                    <img
+                      class="img-fluid"
+                      src="images/calathea-info.png"
+                      alt="calathea plant"
+                    />
+                  </div>
+                  <!-- Care Grid -->
+                  <div class="accordion-inner-col col-md-6">
+                    <div class="care-grid">
+                      <div class="care">
+                        <div class="care-icon">
+                          <img
+                            src="images/GrunHaus-Icon-light-update.svg"
+                            width="40px"
+                            alt="sunlight icon"
+                          />
+                        </div>
+                        <h5>Light</h5>
+                        <p>Medium indirect</p>
+                      </div>
+                      <div class="care">
+                        <div class="care-icon">
+                          <img
+                            src="images/GrunHaus-Icon-water.svg"
+                            width="40px"
+                            alt="water icon"
+                          />
+                        </div>
+                        <h5>Water</h5>
+                        <p>
+                          Allow top of soil to dry out; enjoys moderate humidity
+                        </p>
+                      </div>
+                      <div class="care">
+                        <div class="care-icon">
+                          <img
+                            src="images/GrunHaus-Icon-soil.svg"
+                            width="40px"
+                            alt="soil icon"
+                          />
+                        </div>
+                        <h5>Soil</h5>
+                        <p>Good aeration, with perlite or coco chip base</p>
+                      </div>
+                      <div class="care">
+                        <div class="care-icon">
+                          <img
+                            src="images/GrunHaus-Icon-pets-update.svg"
+                            width="40px"
+                            alt="paw print icon"
+                          />
+                        </div>
+                        <h5>Pet-Safe?</h5>
+                        <p style="color: var(--primary)"><b>Yes</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion #2 -->
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <button
+                class="btn btn-link care-btn collapsed accordion-header"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+                aria-label="Toggle Accordion Item 2"
+              >
+                <span class="h3">Monstera</span>
+                <span class="accordion-caret">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-caret-down-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </div>
+            <!-- Accordion Block Start -->
+            <div
+              id="collapseTwo"
+              class="collapse"
+              aria-labelledby="headingTwo"
+              data-parent="#accordion"
+            >
+              <div class="card-body accordion-content">
+                <div class="d-flex accordion-inner-row">
+                  <div class="accordion-inner-col col-md-6 my-3 mb-md-0">
+                    <img
+                      class="img-fluid"
+                      src="images/monstera-info.png"
+                      alt="Monstera plant"
+                    />
+                  </div>
+                  <!-- Care Grid -->
+                  <div class="accordion-inner-col col-md-6">
+                    <div class="care-grid">
+                      <div class="care">
+                        <div class="care-icon">
+                          <img
+                            src="images/GrunHaus-Icon-light-update.svg"
+                            width="40px"
+                            alt="sunlight icon"
+                          />
+                        </div>
+                        <h5>Light</h5>
+                        <p>Medium to bright indirect</p>
+                      </div>
+                      <div class="care">
+                        <div class="care-icon">
+                          <img
+                            src="images/GrunHaus-Icon-water.svg"
+                            width="40px"
+                            alt="water icon"
+                          />
+                        </div>
+                        <h5>Water</h5>
+                        <p>
+                          Allow top of soil to dry out; enjoys high humidity
+                        </p>
+                      </div>
+                      <div class="care">
+                        <div class="care-icon">
+                          <img
+                            src="images/GrunHaus-Icon-soil.svg"
+                            width="40px"
+                            alt="soil icon"
+                          />
+                        </div>
+                        <h5>Soil</h5>
+                        <p>Chunky, well-aerated mix with coco coir base</p>
+                      </div>
+                      <div class="care">
+                        <div class="care-icon">
+                          <img
+                            src="images/GrunHaus-Icon-pets-update.svg"
+                            width="40px"
+                            alt="paw print icon"
+                          />
+                        </div>
+                        <h5>Pet-Safe?</h5>
+                        <p style="color: var(--accent)"><b>No</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion #3 -->
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <button
+                class="btn btn-link care-btn collapsed accordion-header"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+                aria-label="Toggle Accordion Item 3"
+              >
+                <span class="h3">Peperomia</span>
+                <span class="accordion-caret">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-caret-down-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </div>
+            <!-- Accordion Block Start -->
+            <div
+              id="collapseThree"
+              class="collapse"
+              aria-labelledby="headingThree"
+              data-parent="#accordion"
+            >
+              <div class="card-body accordion-content">
+                <div class="d-flex accordion-inner-row">
+                  <div class="accordion-inner-col col-md-6 my-3 mb-md-0">
+                    <img
+                      class="img-fluid"
+                      src="images/peperomia-info.png"
+                      alt="Peperomia plant"
+                    />
+                  </div>
+                  <!-- Care Grid -->
+                  <div class="accordion-inner-col col-md-6">
+                    <div class="care-grid">
+                      <div class="care">
+                        <div class="care-icon">
+                          <img
+                            src="images/GrunHaus-Icon-light-update.svg"
+                            width="40px"
+                            alt="sunlight icon"
+                          />
+                        </div>
+                        <h5>Light</h5>
+                        <p>Bright indirect</p>
+                      </div>
+                      <div class="care">
+                        <div class="care-icon">
+                          <img
+                            src="images/GrunHaus-Icon-water.svg"
+                            width="40px"
+                            alt="water icon"
+                          />
+                        </div>
+                        <h5>Water</h5>
+                        <p>
+                          Allow soil to dry out between watering; humidity helps
+                          but isn't necessary
+                        </p>
+                      </div>
+                      <div class="care">
+                        <div class="care-icon">
+                          <img
+                            src="images/GrunHaus-Icon-soil.svg"
+                            width="40px"
+                            alt="soil icon"
+                          />
+                        </div>
+                        <h5>Soil</h5>
+                        <p>Good mix of peat moss and perlite</p>
+                      </div>
+                      <div class="care">
+                        <div class="care-icon">
+                          <img
+                            src="images/GrunHaus-Icon-pets-update.svg"
+                            width="40px"
+                            alt="paw print icon"
+                          />
+                        </div>
+                        <h5>Pet-Safe?</h5>
+                        <p style="color: var(--primary)"><b>Yes</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion #4 -->
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <button
+                class="btn btn-link care-btn collapsed accordion-header"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+                aria-label="Toggle Accordion Item 4"
+              >
+                <span class="h3">Pothos</span>
+                <span class="accordion-caret">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-caret-down-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </div>
+            <!-- Accordion Block Start -->
+            <div
+              id="collapseFour"
+              class="collapse"
+              aria-labelledby="headingFour"
+              data-parent="#accordion"
+            >
+              <div class="card-body accordion-content">
+                <div class="d-flex accordion-inner-row">
+                  <div class="accordion-inner-col col-md-6 my-3 mb-md-0">
+                    <img
+                      class="img-fluid"
+                      src="images/pothos-info.png"
+                      alt="Pothos plant"
+                    />
+                  </div>
+                  <!-- Care Grid -->
+                  <div class="accordion-inner-col col-md-6">
+                    <div class="care-grid">
+                      <div class="care">
+                        <div class="care-icon">
+                          <img
+                            src="images/GrunHaus-Icon-light-update.svg"
+                            width="40px"
+                            alt="sunlight icon"
+                          />
+                        </div>
+                        <h5>Light</h5>
+                        <p>Low to medium indirect</p>
+                      </div>
+                      <div class="care">
+                        <div class="care-icon">
+                          <img
+                            src="images/GrunHaus-Icon-water.svg"
+                            width="40px"
+                            alt="water icon"
+                          />
+                        </div>
+                        <h5>Water</h5>
+                        <p>Allow soil to dry out between watering</p>
+                      </div>
+                      <div class="care">
+                        <div class="care-icon">
+                          <img
+                            src="images/GrunHaus-Icon-soil.svg"
+                            width="40px"
+                            alt="soil icon"
+                          />
+                        </div>
+                        <h5>Soil</h5>
+                        <p>Prefers a mix that drains well, but isn't picky</p>
+                      </div>
+                      <div class="care">
+                        <div class="care-icon">
+                          <img
+                            src="images/GrunHaus-Icon-pets-update.svg"
+                            width="40px"
+                            alt="paw print icon"
+                          />
+                        </div>
+                        <h5>Pet-Safe?</h5>
+                        <p style="color: var(--accent)"><b>No</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion #5 -->
+          <div class="card">
+            <div class="card-header" id="headingFive">
+              <button
+                class="btn btn-link care-btn collapsed accordion-header"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+                aria-label="Toggle Accordion Item 5"
+              >
+                <span class="h3">Snake Plant</span>
+                <span class="accordion-caret">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-caret-down-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </div>
+            <!-- Accordion Block Start -->
+            <div
+              id="collapseFive"
+              class="collapse"
+              aria-labelledby="headingFive"
+              data-parent="#accordion"
+            >
+              <div class="card-body accordion-content">
+                <div class="d-flex accordion-inner-row">
+                  <div class="accordion-inner-col col-md-6 my-3 mb-md-0">
+                    <img
+                      class="img-fluid"
+                      src="images/snakeplant-info.png"
+                      alt="Snake plant"
+                    />
+                  </div>
+                  <!-- Care Grid -->
+                  <div class="accordion-inner-col col-md-6">
+                    <div class="care-grid">
+                      <div class="care">
+                        <div class="care-icon">
+                          <img
+                            src="images/GrunHaus-Icon-light-update.svg"
+                            width="40px"
+                            alt="sunlight icon"
+                          />
+                        </div>
+                        <h5>Light</h5>
+                        <p>Low indirect</p>
+                      </div>
+                      <div class="care">
+                        <div class="care-icon">
+                          <img
+                            src="images/GrunHaus-Icon-water.svg"
+                            width="40px"
+                            alt="water icon"
+                          />
+                        </div>
+                        <h5>Water</h5>
+                        <p>
+                          Water sparingly; allow soil to dry out thoroughly
+                          between watering
+                        </p>
+                      </div>
+                      <div class="care">
+                        <div class="care-icon">
+                          <img
+                            src="images/GrunHaus-Icon-soil.svg"
+                            width="40px"
+                            alt="soil icon"
+                          />
+                        </div>
+                        <h5>Soil</h5>
+                        <p>Well-draining mix of perlite and sand</p>
+                      </div>
+                      <div class="care">
+                        <div class="care-icon">
+                          <img
+                            src="images/GrunHaus-Icon-pets-update.svg"
+                            width="40px"
+                            alt="paw print icon"
+                          />
+                        </div>
+                        <h5>Pet-Safe?</h5>
+                        <p style="color: var(--accent)"><b>No</b></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----------------------Divider-------------------------->
+    <div class="black-divider2"></div>
+    <div class="gh-divider"><div class="gh-divider-box"></div></div>
+    <!----MORE PRODUCTS---->
+    <h3 class="p-4 mt-4">Learn More - Add More:</h3>
+    <div class="container pb-3" id="rec-cards">
+      <div
+        class="row row-cols-2 row-cols-md-2 row-cols-lg-4 align-items-stretch pb-5 mb-5"
+      >
+        <div class="col my-1">
+          <div class="card">
+            <div class="card-body">
+              <a href="#" class="card-link">
+                <img
+                  src="images/gh-shop-thumb-pet-ficus.jpg"
+                  class="img-fluid image-link"
+                  alt="Placeholder image"
+                /><br /><br />
+                <h5 class="card-title">GENSING FICUS</h5></a
+              >
+              <h6 class="card-subtitle mb-2 text-muted">$$$</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col my-1">
+          <div class="card">
+            <div class="card-body">
+              <a href="#" class="card-link">
+                <img
+                  src="images/gh-shop-thumb-easy-zz.jpg"
+                  class="img-fluid image-link"
+                  alt="Placeholder image"
+                /><br /><br />
+                <h5 class="card-title">ZZ Plant</h5></a
+              >
+              <h6 class="card-subtitle mb-2 text-muted">$$$</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col my-1">
+          <div class="card">
+            <div class="card-body">
+              <a href="#" class="card-link">
+                <img
+                  src="images/gh-shop-thumb-succ-jade.jpg"
+                  class="img-fluid image-link"
+                  alt="Placeholder image"
+                /><br /><br />
+                <h5 class="card-title">JADE CRASSULA</h5></a
+              >
+              <h6 class="card-subtitle mb-2 text-muted">$$$</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col my-1">
+          <div class="card">
+            <div class="card-body">
+              <a href="#" class="card-link">
+                <img
+                  src="images/gh-shop-thumb-easy-snakeplant.jpg"
+                  class="img-fluid image-link"
+                  alt="Placeholder image"
+                /><br /><br />
+                <h5 class="card-title">SNAKE PLANT</h5></a
+              >
+              <h6 class="card-subtitle mb-2 text-muted">$$$</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----------------------Divider-------------------------->
+    <div class="gh-divider"><div class="gh-divider-box"></div></div>
+    <!------------------------------------------------ FOOTER ---------------------------------------------------------------->
+    <div class="container-fluid">
+      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5">
+        <div class="col col-md-6 sub-colum p-2">
+          <a
+            href="index.html"
+            alt="return to home page"
+            class="d-flex align-items-end mb-3 text-decoration-none h4"
+            aria-label="Footer Logo"
+          >
+            <img
+              src="images/grunhaus-icon-black.svg"
+              alt="GrunHaus Icon"
+              width="35"
+              class="img-thumbnail img-fluid"
+            />The GrünHaus
+          </a>
+          <form>
+            <h5 style="color: var(--primary)">Subscribe for GH Updates</h5>
+            <div class="d-flex flex-column flex-sm-row">
+              <input
+                id="newsletter1"
+                type="email"
+                class="form-control"
+                placeholder="Email address"
+              />
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+          <br />
+        </div>
+
+        <div class="col col-md-3 p-2">
+          <h5 style="color: var(--primary)">Quick Links</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="index.html" alt="home page" class="nav-link p-0 text-body-secondary"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="shop.html" alt="shop page" class="nav-link p-0 text-body-secondary"
+                >Shop</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="plant-care.html" alt="plant care page" class="nav-link p-0 text-body-secondary"
+                >Plant Care</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href="events.html" alt="events page" class="nav-link p-0 text-body-secondary">Events</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="about.html" alt="about page" class="nav-link p-0 text-body-secondary">About</a>
+            </li>
+          </ul>
+          <br />
+        </div>
+
+        <div class="col col-md-3 p-2">
+          <h5 style="color: var(--primary)">Legalese</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a class="nav-link disabled"
+                >Privacy Policy</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a class="nav-link disabled">Terms of Service</a>
+            </li>
+            <br />
+            <p class="text-body-secondary">
+              © 2025 The GrünHaus | All rights reserved.
+            </p>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <!------------------------------------------------ END FOOTER ---------------------------------------------------------------->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+
+    <!-- Just for Plant Care carets-->
+    <script>
+      $(document).ready(function () {
+        $("#accordion .collapse")
+          .on("show.bs.collapse", function () {
+            $(this)
+              .prev(".card-header")
+              .find(".accordion-caret")
+              .addClass("rotate-180");
+          })
+          .on("hide.bs.collapse", function () {
+            $(this)
+              .prev(".card-header")
+              .find(".accordion-caret")
+              .removeClass("rotate-180");
+          });
+      });
+    </script>
+  </body>
+</html>
