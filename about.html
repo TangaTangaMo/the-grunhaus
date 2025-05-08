@@ -117,7 +117,7 @@
         <div class="col-md-4 col-sm-12">
           <div class="plant-care-head-img situ-border-x situ-border-yrev">
             <img
-              src="images/ph.jpg"
+              src="images/about-door2.jpg"
               class="img-fluid"
               alt="The GrunHaus exterior"
             />
@@ -137,7 +137,7 @@
     <!----------------------- Who We Are -------------------------->
     <div class="container-fluid">
       <div class="row align-items-center">
-        <div class="col col-md-8 col-12 mx-auto p-5 situ-border-right">
+        <div class="col col-md-7 col-12 mx-auto p-5 situ-border-right">
           <div class="container p-5">
             <div class="row border-b">
               <h2 class="display-7 mb-2">Who We Are</h2>
@@ -162,9 +162,13 @@
           </div>
         </div>
 
-        <div class="col col-md-4 col-12 p-5">
+        <div class="col col-md-5 col-12 p-3">
           <div class="plant-care-head-img">
-            <img src="images/ph.jpg" class="img-fluid" alt="Plant care" />
+            <img
+              src="images/about-shop-interior.jpg"
+              class="img-fluid"
+              alt="Plant shop interior"
+            />
           </div>
         </div>
       </div>
@@ -175,14 +179,14 @@
     <!----------------------- Our Space -------------------------->
     <div class="container border-x">
       <div class="row">
-        <div class="col d-flex align-items-stretch col-4 border-r">
+        <div class="col d-flex align-items-stretch col-md-4 col-6 border-r">
           <div class="row row-cols-1 mx-auto">
             <div class="col d-flex align-items-stretch">
               <div class="plant-care-head-img">
                 <img
-                  src="images/GrunHaus-soil.jpg"
+                  src="images/about-door.jpg"
                   class="img-thumbnail"
-                  alt="Gardening soil"
+                  alt="plant shop entrance"
                 />
               </div>
             </div>
@@ -190,16 +194,16 @@
             <div class="col d-flex align-items-stretch">
               <div class="plant-care-head-img border-t">
                 <img
-                  src="images/GrunHaus-merch.jpg"
+                  src="images/about-interior.jpg"
                   class="img-thumbnail"
-                  alt="GrunHaus merchandise"
+                  alt="plant shop interior"
                 />
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col-8 p-5">
+        <div class="col-md-8 col-6 p-5">
           <div class="container align-self-center">
             <div class="row-col border-b">
               <h2 class="display-7 mb-2">Our Space</h2>
@@ -227,17 +231,17 @@
     <!----------------------- Community -------------------------->
     <div class="container-fluid">
       <div class="row align-items-center">
-        <div class="col col-md-4 col-12 p-5">
+        <div class="col col-md-5 col-12 p-3">
           <div class="plant-care-head-img">
             <img
-              src="images/ph.jpg"
+              src="images/about-comm.jpg"
               class="img-fluid"
               alt="The GrunHaus exterior"
             />
           </div>
         </div>
 
-        <div class="col-md-8 col-12 mx-auto p-5 situ-border-left">
+        <div class="col-md-7 col-12 p-5 situ-border-left">
           <div class="container p-5">
             <div class="row border-b">
               <h2 class="display-7 mb-2">
@@ -269,6 +273,81 @@
             </p>
           </div>
         </div>
+      </div>
+    </div>
+    <!-----------------------Divider-------------------------->
+    <div class="gh-divider"></div>
+    <!----------------------- CONTACT -------------------------->
+    <div class="container-fluid bg-green">
+      <div class="container bg-white border-x" id="contact">
+        <h3 class="py-3">Contact Us</h3>
+        <p>Questions? We enjoy intrigue. Drop us a line.</p>
+        <!-- form starting  -->
+        <form class="form-horizontal" method="post" action="contact.php">
+          <div class="form-group">
+            <div class="col-sm-12">
+              <!-- name  -->
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Your Name"
+                name="name"
+                value=""
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-12">
+              <!-- email  -->
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Your Email"
+                name="email"
+                value=""
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-sm-12">
+              <!-- subject  -->
+              <input
+                type="subject"
+                class="form-control"
+                id="subject"
+                placeholder="Subject"
+                name="subject"
+                value=""
+                required
+              />
+            </div>
+          </div>
+
+          <!-- message  -->
+          <textarea
+            class="form-control"
+            rows="10"
+            placeholder="MESSAGE"
+            name="message"
+          >
+          </textarea>
+
+          <button
+            class="btn btn-primary send-button my-3"
+            id="submit"
+            type="submit"
+            value="SEND"
+          >
+            <span class="send-text">SEND</span>
+          </button>
+        </form>
+        <!-- end of form -->
       </div>
     </div>
     <!-----------------------Divider-------------------------->
